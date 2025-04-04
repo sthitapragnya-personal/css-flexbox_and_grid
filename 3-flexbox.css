@@ -1,0 +1,44 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    width: 60%;
+    height: 400px;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    flex-direction: row;
+    justify-content: flex-start; 
+    /* the above property is by default */
+    justify-content: start;
+    justify-content: center;
+    justify-content: end;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+
+
+    /* the bellow three properties is used to distribute the flex items in the vertical axis or the cross axis */
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+}
+.item{
+    color: white;
+    width: 90px;
+    /* aspect-ratio: 1; */
+    height: 90px;
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    font-size: 30px;
+}
+
+.item-2{
+    flex-grow: 1;
+    flex-shrink: 1;
+}
